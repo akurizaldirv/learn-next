@@ -1,5 +1,4 @@
-import React from 'react';
-
+import {notFound} from "next/navigation";
 const ProductDetail = (data) => {
     // console.table(data);
     // by default, there is 2 props:
@@ -8,6 +7,10 @@ const ProductDetail = (data) => {
     // // https://localhost:3000/products/1?key=plate
     // // the {key: 'plate'} is in searchParams
 
+    // when productId = 1000 then will show not found page in app scope
+    if (data.params.productId === "1000") {
+        notFound();
+    }
 
     return (
         <div>

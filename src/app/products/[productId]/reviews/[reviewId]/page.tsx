@@ -1,7 +1,15 @@
 import React from 'react';
+import {notFound} from "next/navigation";
 
 const ReviewDetail = ({params}) => {
     console.log(params);
+
+    // to display not found page on review scope
+    if (params.productId === "1000") {
+        notFound();
+    }
+
+
     return (
         <div>
             <ul>
