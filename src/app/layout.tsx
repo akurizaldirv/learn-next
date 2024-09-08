@@ -1,5 +1,5 @@
 import {Metadata} from "next";
-import React from "react";
+import "./global.css";
 
 export const metadata : Metadata = {
   title: 'Next.js',
