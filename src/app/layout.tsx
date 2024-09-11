@@ -1,8 +1,8 @@
 import {Metadata} from "next";
 import "./global.css";
-import HeaderComponent from "@/components/header/Header";
 import {Inter, Archivo} from "next/font/google";
-import FooterComponent from "@/components/footer/Footer";
+import FooterComponent from "@/shared/components/footer/Footer";
+import HeaderComponent from "@/shared/components/header/Header";
 
 export const metadata: Metadata = {
     title: {
@@ -29,7 +29,7 @@ export default function RootLayout({children}: {
         <html lang="en">
             <body className={`${inter.variable} ${archivo.variable} font-sans flex flex-col h-screen`}>
                 <header>
-                    <HeaderComponent/>
+                    <HeaderComponent />
                 </header>
                 <main className={"flex-1"}>
                     {children}
