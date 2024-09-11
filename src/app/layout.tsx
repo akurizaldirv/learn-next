@@ -3,6 +3,8 @@ import "./global.css";
 import {Inter, Archivo} from "next/font/google";
 import FooterComponent from "@/shared/components/footer/Footer";
 import HeaderComponent from "@/shared/components/header/Header";
+import React from "react";
+import LandingPageLayout from "@/app/(landing-page)/layout";
 
 export const metadata: Metadata = {
     title: {
@@ -27,16 +29,8 @@ export default function RootLayout({children}: {
 }) {
     return (
         <html lang="en">
-            <body className={`${inter.variable} ${archivo.variable} font-sans flex flex-col h-screen`}>
-                <header>
-                    <HeaderComponent />
-                </header>
-                <main className={"flex-1"}>
-                    {children}
-                </main>
-                <footer className={""}>
-                    <FooterComponent />
-                </footer>
+            <body className={`${inter.variable} ${archivo.variable} font-sans flex flex-col min-h-screen`}>
+            {children}
             </body>
         </html>
     )
