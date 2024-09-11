@@ -8,7 +8,7 @@ const Register = () => {
     const [confPassword, setConfPassword] = useState('');
     return (
         <div className={"flex flex-col gap-8"}>
-            <h1 className={"font-bold text-4xl"}>Register to Begin</h1>
+            <h1 className={"font-bold text-4xl font-head"}>Register to Begin</h1>
             <div className="flex flex-col gap-3">
                 <input type="email" name={"email"} placeholder="Email" value={email}
                        onChange={(e) => setEmail(e.target.value)}

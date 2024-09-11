@@ -8,7 +8,7 @@ const LandingPageLayout = ({children} : {children: ReactNode}) => {
             <header>
                 <HeaderComponent/>
             </header>
-            <main className={"flex-1"}>
+            <main className={"flex-1 flex"}>
                 {children}
             </main>
             <footer className={""}>

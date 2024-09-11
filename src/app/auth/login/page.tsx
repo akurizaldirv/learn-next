@@ -7,7 +7,7 @@ const Login = () => {
     const [password, setPassword] = useState('');
     return (
         <div className={"flex flex-col gap-8"}>
-            <h1 className={"font-bold text-4xl"}>Login to Continue</h1>
+            <h1 className={"font-bold text-4xl font-head"}>Login to Continue</h1>
             <div className="flex flex-col gap-3">
                 <input type="email" name={"email"} placeholder="Email" value={email}
                        onChange={(e) => setEmail(e.target.value)}

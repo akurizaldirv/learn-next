@@ -8,7 +8,7 @@ const ProductList = () => {
         router.push(`/products/${id}`);
     }
     return (
-        <div className={"px-8 py-8"}>
+        <div className={"px-8 py-8 flex-1"}>
             <h1 className={"text-8xl font-head"}>Our Products</h1>
             <div className={"products"}>
                 <table className={"w-full mt-10"}>
