@@ -1,5 +1,6 @@
 import React from 'react';
 import {Metadata} from "next";
+import {productData} from "@/shared/data/products/products";
 
 type Props = {
     params: {
@@ -14,9 +15,12 @@ export const generateMetadata = ({params} : Props) : Metadata => {
 }
 
 const ProductDetail = ({params} : Props) => {
+    const data = productData.find(product => product.id === Number.parseInt(params.productId));
+    if (!data) throw new Error("Product not found");
+
     return (
         <div>
-            Product {params.productId}
+            {data?.title}
         </div>
     );
 };
