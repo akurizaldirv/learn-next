@@ -9,13 +9,15 @@ import React from 'react';
     - every slots works independently, so if 1 slot got error, other components work fine
  */
 
-const DashboardLayout = ({children, users, revenue, notification}: {
+const DashboardLayout = ({children, users, revenue, notification, login}: {
     children: React.ReactNode,
     users: React.ReactNode,
     revenue: React.ReactNode,
     notification: React.ReactNode,
+    login: React.ReactNode,
 }) => {
-    return (
+    const isLoggedIn = false;
+    return isLoggedIn ? (
         <div>
             {children}
             <div className={"flex-1 flex gap-4 w-full h-screen p-8"}>
@@ -28,6 +30,8 @@ const DashboardLayout = ({children, users, revenue, notification}: {
                 </div>
             </div>
         </div>
+    ) : (
+        login
     );
 };
 

@@ -1,8 +1,8 @@
 import React from 'react';
-import CardComponent from "@/shared/components/card/Card";
 import Link from "next/link";
+import CardComponent from "@/shared/components/card/Card";
 
-const Notification = () => {
+const DefaultNotification = () => {
     return (
         <CardComponent>
             <div className="flex flex-col justify-between h-full">
@@ -13,4 +13,4 @@ const Notification = () => {
     );
 };
 
-export default Notification;
+export default DefaultNotification;
