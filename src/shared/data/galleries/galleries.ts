@@ -6,14 +6,9 @@ import photo4 from "../../../assets/gallery-photo/4.jpg";
 import photo5 from "../../../assets/gallery-photo/5.jpeg";
 import photo6 from "../../../assets/gallery-photo/6.png";
 import photo7 from "../../../assets/gallery-photo/7.jpg";
+import { GalleryImageType } from "@/type/gallery";
 
-export type GalleryImage = {
-    id: number,
-    src: StaticImageData,
-    title: string,
-}
-
-export const galleries: GalleryImage[] = [
+export const galleries: GalleryImageType[] = [
     {
         id: 1,
         src: photo1,
