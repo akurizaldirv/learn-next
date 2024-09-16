@@ -1,4 +1,3 @@
-import {StaticImageData} from "next/image";
 import photo1 from "../../../assets/gallery-photo/1.jpeg";
 import photo2 from "../../../assets/gallery-photo/2.jpg";
 import photo3 from "../../../assets/gallery-photo/3.jpg";

@@ -1,10 +1,7 @@
 import {Metadata} from "next";
 import "./global.css";
 import {Inter, Archivo} from "next/font/google";
-import FooterComponent from "@/shared/components/footer/Footer";
-import HeaderComponent from "@/shared/components/header/Header";
 import React from "react";
-import LandingPageLayout from "@/app/(landing-page)/layout";
 
 export const metadata: Metadata = {
     title: {

@@ -1,5 +1,5 @@
 export type GlobalResponseType<T> = {
-    status: Number | null,
+    status: number | null,
     message: string | null,
     data: T
 }

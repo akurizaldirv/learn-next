@@ -28,7 +28,7 @@ export async function PUT(
     req: Request,
     { params }: { params: { id: string } }
 ) {
-    let status: Number | null = null;
+    let status: number | null = null;
     let message: string | null = null;
     let data: CommentType | null = null;
 
@@ -78,7 +78,7 @@ export async function DELETE(
     req: Request,
     { params }: { params: { id: string } }
 ) {
-    let status: Number | null = null;
+    let status: number | null = null;
     let message: string | null = null;
 
     try {
